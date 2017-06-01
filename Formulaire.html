@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Formulaire de commande</title>
+		<link rel="stylesheet" type="text/css" href="StyleFormulaire.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type='text/javascript' src='ScriptFormulaire.js'></script>
+		
+	</head>
+
+	<body onload="Cacher();">
+			
+		<form name="test" id="Formulaire">
+		
+		<div id="Genre">
+				<input type="radio" name="Genre" value="M" />Monsieur
+				<input type="radio" name="Genre"  value="Mme" /> Madame
+				<input type="radio" name="Genre"  value="Mlle"/> Mademoiselle
+		</div>
+		
+		<div id="Nom">
+			<label for="pseudo">Nom </label>
+			<input type="text" name="Nom" id="nom"/>
+		</div>
+		
+		<div id="Prenom">
+			<label for="pseudo">Prenom </label>
+			<input type="text" name="Prenom" id="prenom"/>
+		</div>
+			
+		<div id="Adresse">
+			<label for="pseudo">Adresse </label>
+			<input type="text" name="Adresse" id="adresse" size="55"/>
+		</div>
+		
+		<div id="CodePostal">			
+			<label for="pseudo">Code postal </label>
+			<input type="text" name="Code postal" id="code postal"/>
+		</div>
+		
+		<div id="Ville">
+			<label for="pseudo">Ville </label>
+			<input type="text" name="Ville" id="ville"/>
+		</div>
+				
+			<div id="TextArea">	
+				<textarea id="text" name="TextArea" rows="10" cols="80" wrap="soft"></textarea>
+			</div>
+			
+			<div id="Verifier">
+				<input type="button" value="Verifier" onClick="Analyser()"/>
+			</div>
+			
+			<div id="Soumettre">
+				<input name="test2" type="submit" value="Soumettre" onClick="Commander();"/>
+			</div>
+			
+			<div id="Accepter">
+			<input type="checkbox" name="A" value="J'accepte les conditions générales de vente" onclick="Cocher();"/>J'accepte les conditions génerales de ventes 
+			</div>
+			
+			<div id="Valider">
+			<input type="checkbox" name="V" value="Je valide cette adresse de livraison" />Je valide cette adresse de livraison 
+			</div>
+			
+		</form>				
+	
+	</body>
+
+</html>
+			
+			
+			
+
